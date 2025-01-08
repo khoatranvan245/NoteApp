@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import User from "../model/user";
-const register = async (req: Request, res: Response): Promise<any> => {
+
+const signUp = async (req: Request, res: Response): Promise<any> => {
   const { username, password } = req.body;
 
   if (await User.exists({ username: username })) {
@@ -15,4 +16,4 @@ const register = async (req: Request, res: Response): Promise<any> => {
   return res.status(200).json(newUser);
 };
 
-export { register };
+export { signUp };
