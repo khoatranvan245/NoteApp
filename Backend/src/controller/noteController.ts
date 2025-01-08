@@ -14,4 +14,6 @@ const addNote = async (req: Request, res: Response) => {
   }
 };
 
+const getNote = async (req: Request, res: Response) => {};
+
 export { addNote };
