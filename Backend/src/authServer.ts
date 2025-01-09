@@ -11,5 +11,5 @@ app.use(express.json());
 app.use("/api/v1", authRouter);
 
 app.listen(4444, () => {
-  console.log("auth running...");
+  console.log("Auth server running...");
 });

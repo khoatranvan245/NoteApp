@@ -1,7 +1,9 @@
 import express from "express";
-import { addNote } from "../controller/noteController";
+import { addNote, getNote } from "../controller/noteController";
+import verifyToken from "../middleware/verifyToken";
 const router = express.Router();
 
-router.post("/notes", addNote);
+router.post("/notes", verifyToken, addNote);
+router.get("/notes", verifyToken, getNote);
 
 export default router;

@@ -16,5 +16,5 @@ app.use("/api/v1", noteRouter);
 app.use("/api/v1", userRouter);
 
 app.listen(3333, () => {
-  console.log("Hello world");
+  console.log("Main server running");
 });
