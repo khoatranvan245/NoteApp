@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react"
-import styles from "./app.module.scss"
+import styles from "./App.module.scss"
 function App() {
   const [username, setUsername] = useState<string>()
   const [password, setPassword] = useState<string>()
